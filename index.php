@@ -33,5 +33,11 @@ $articles = App\Generator::getArticles();
             <?php endforeach ?>
         </div>
     </div>
+
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script> 
+     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <!-- Charge notre composant React -->
+  <script src="static/js/posts.js"></script>
 </body>
 </html>

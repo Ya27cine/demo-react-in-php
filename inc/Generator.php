@@ -25,7 +25,7 @@ class Generator
         // Création des commentaires
         for ($i = 0; $i < mt_rand(0, 8); $i++) {
             $comments[] = [
-                'author' => $faker->userName,
+                'author' =>   $faker->userName,
                 'content' => $faker->paragraph,
                 'createdAt' => $faker->dateTimeBetween('-6 days')->format('Y-m-d'),
             ];
