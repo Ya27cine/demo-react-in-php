@@ -19,6 +19,7 @@ $articles = App\Generator::getArticles();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mon site en PHP etc etc.</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
@@ -29,6 +30,7 @@ $articles = App\Generator::getArticles();
                     <h2><?= $article['title'] ?></h2>
                     <p><?= $article['introduction'] ?></p>
                     <a href="article.php" class="btn btn-primary">Lire la suite</a>
+                    <span class="react-like"></span>
                 </div>
             <?php endforeach ?>
         </div>
