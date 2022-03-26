@@ -40,6 +40,7 @@ $articles = App\Generator::getArticles();
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script> 
      <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
   <!-- Charge notre composant React -->
-  <script src="static/js/posts.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="static/js/posts.js" type="text/babel"></script>
 </body>
 </html>

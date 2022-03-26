@@ -1,0 +1,22 @@
+{
+  "name": "app-react-in-php",
+  "version": "1.0.0",
+  "description": "Dans ce tutoriel, on voit comment ajouter React à un site existant et même ... vieillissant !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ya27cine/demo-react-in-php.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ya27cine/demo-react-in-php/issues"
+  },
+  "homepage": "https://github.com/Ya27cine/demo-react-in-php#readme",
+  "dependencies": {
+    "@symfony/webpack-encore": "^1.8.2"
+  }
+}

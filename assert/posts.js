@@ -19,7 +19,30 @@ class LikeButton extends React.Component {
     }
 
     render() {
-        return React.createElement('button', { className: 'btn btn-link', onClick: this.handleClick },
+        return <button className="btn btn-link" onClick={this.handleClick}>
+            {this.state.likes}&nbsp;
+            <i className={this.state.isLiked ? "fa fa-thumbs-up" : "fa fa-thumbs-o-up"}></i>&nbsp;
+            {this.state.isLiked ? "Je n'aime plus  !" : "J'aime  !"}
+        </button>
+    }
+}
+
+document.querySelectorAll('span.react-like').forEach(function (span) {
+    ReactDOM.render(React.createElement(LikeButton), span)
+});
+
+
+
+
+
+
+
+
+
+
+
+
+  return React.createElement('button', { className: 'btn btn-link', onClick: this.handleClick },
             this.state.likes,
             " ",
             React.createElement('i', { className: this.state.isLiked ? "fa fa-thumbs-up" : "fa fa-thumbs-o-up" }),
@@ -27,9 +50,3 @@ class LikeButton extends React.Component {
             " ",
             this.state.isLiked ? "Je n'aime plus  !" : "J'aime  !"
         );
-    }
-}
-
-document.querySelectorAll('span.react-like').forEach(function (span) {
-    ReactDOM.render(React.createElement(LikeButton), span)
-});
