@@ -6,10 +6,10 @@ Dans ce tutoriel, on voit comment ajouter React à un site existant et même ...
 
 ```
 # On clone le dépot
-git clone https://github.com/liorchamla/cours-react-in-php.git
+https://github.com/Ya27cine/demo-react-in-php.git
 
 # On va dans le dossier
-cd cours-react-in-php
+cd react-in-php
 
 # On installe les dépendances avec Composer
 composer install
